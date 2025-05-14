@@ -1,0 +1,14 @@
+@use "../base/variables" as v;
+
+.hidden { //hide elements from the stage that are later introduce with GSAP
+    opacity: 0;
+  }
+.highlight  { //use on spans' to highlight specific words
+    background-color: red;
+    color: white;
+    padding: v.$space-3xs;
+    font-weight: 600;
+}
+.blur {
+  filter: blur(4px);
+}

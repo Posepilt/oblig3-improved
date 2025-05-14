@@ -1,0 +1,35 @@
+/* Ending */
+.final-words {
+    background: #0a97d9;
+    color: white;
+    padding: 5rem 4rem;
+    margin: auto;
+    text-align: center;
+}
+#first-half {
+    margin-block-start: 30vh;
+    margin-block-end: 60vh;
+    font-size: 30px;
+}
+#big-text {
+    margin-block-start: 25vh;
+    font-size: 60px;
+    font-weight: 600;
+}
+#last-half {
+    font-size: 30px;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+
+    &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#svg-gif img {
+    max-width: 30vw;
+    margin-block-start: 10vh;
+}

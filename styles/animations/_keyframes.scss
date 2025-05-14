@@ -1,0 +1,57 @@
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(0.25deg); }
+    50%  { transform: rotate(0deg); }
+    75%  { transform: rotate(-0.25deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-0.25deg);
+      transform-origin: right bottom;
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  #depth3__fin {
+    animation: wiggle 2s ease-in-out infinite;
+  }
+
+
+  @keyframes spinOnce {
+    from {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+      transform: translateX(-50%) rotate(360deg);
+    }
+}

@@ -1,0 +1,9 @@
+/* MEDIA QUERIES */
+@media (prefers-reduced-motion: reduce) {
+    .reduced-motion
+    {
+        animation: none !important; //stop animations in reduced motion mode
+        transition: none !important; //stop fade in final words
+    }
+}
+  

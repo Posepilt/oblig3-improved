@@ -1,0 +1,44 @@
+/* SCENE 2 */
+.scene2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.scene2__text {
+    width: 18ch;
+}
+.scene2__svg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+#scene2__net, #scene2__cup, #scene2__litter1, #scene2__litter2, #scene2__plasticbag2, #scene2__bottle1, #scene2__bottle2, #scene2__plasticbag1, .float {
+    animation: float 3s infinite ease-in-out;
+}
+#scene2__net {
+    animation-delay: 0s;
+}
+#scene2__cup {
+    animation-delay: 0.5s;
+}
+#scene2__litter1 {
+    animation-delay: 1s;
+}
+#cene2__litter2 {
+    animation-delay: 1.5s;
+}
+#scene2__plasticbag1 {
+    animation-delay: 2s;
+}
+#scene2__bottle1 {
+    animation-delay: 2.5s;
+}
+#scene2__bottle2 {
+    animation-delay: 3s;
+}
+#scene2__plasticbag2 {
+    animation-delay: 3.5s;
+}

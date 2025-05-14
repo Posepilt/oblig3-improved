@@ -1,0 +1,51 @@
+ /* SCENE 3 */
+ .scene3__depth {
+    position: relative;
+    width: 100%;
+    height: 100vh; // Each depth section takes full viewport height
+    transition: background 0.5s ease;
+}
+#scene3__depth1 {
+    background: linear-gradient(to bottom, #98e9f4, #005577); // Light to dark blue
+}
+#scene3__depth2 {
+    background: linear-gradient(to bottom, #005577, #003344); // Darker blue
+}
+#scene3__depth3 {
+    background: linear-gradient(to bottom, #003344, #000a13); // Even darker blue
+}
+#depth__bubble {
+    width: 100%;
+    height: auto;
+}
+#depth3__turtle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+#scene3__svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+#depth3__trash {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    animation-duration: 7s; //slows down animation
+}
+#depth3__fish {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.scene3__facts2 {
+    z-index: 1;
+}
+
+

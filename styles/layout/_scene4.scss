@@ -1,0 +1,46 @@
+/* SCENE 4 */
+.scene4 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    &__svg {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__text {
+        width: 15ch;
+    }
+
+    &__sub-text {
+        font-size: 1rem;
+    }
+}
+.svg-container {
+    width: 100%;
+    height: 100%;
+}
+#gal_garbage-bag {
+    transform-origin: center top;
+
+    &:hover {
+        animation: swing 0.6s ease-in-out 1;
+      }
+}
+
+#congrats {
+    display: none; 
+    position: absolute; 
+    inset-block-start: 20%; 
+    inset-inline-start: 50%; 
+    transform: translateX(-50%); 
+    font-size: 2rem; 
+    color: green;
+
+    &.spin {
+    animation: spinOnce 1s ease-out forwards;
+  }
+}
