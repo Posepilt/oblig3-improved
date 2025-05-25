@@ -180,7 +180,6 @@ a {
 }
 .ending__text {
   font-size: clamp(1.4757rem, 1.2749rem + 1.0709vw, 2.56rem);
-  max-width: 50ch;
 }
 .ending__cta {
   font-size: clamp(2.125rem, 1.7778rem + 1.8519vw, 4rem);

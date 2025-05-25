@@ -8,6 +8,23 @@ ScrollTrigger.create({
   onLeaveBack: () => document.querySelector(".scroll-button--top").style.display = "none"
 });
 
+//gets scroll to bottom button
+const bottomBtn = document.querySelector(".scroll-button--bottom");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const fullHeight = document.documentElement.scrollHeight;
+
+  if (scrollY + windowHeight >= fullHeight) {
+    bottomBtn.style.display = "none"; //hide bottom if at bottom of page
+  } else {
+    bottomBtn.style.display = "block"; //otherwise show it
+  }
+});
+
+
+
 
 
 /* SCENE 3 */
