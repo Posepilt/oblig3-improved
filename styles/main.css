@@ -264,6 +264,7 @@ a {
 }
 
 .scroll-button--top {
+  display: none;
   top: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
   right: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
 }

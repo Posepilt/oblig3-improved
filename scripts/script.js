@@ -1,5 +1,15 @@
 gsap.registerPlugin(ScrollTrigger); //tell GSAP we want to use scrollTrigger plugin
 
+/* SCROLL BUTTON APPEAR/DISSAPPEAR */
+ScrollTrigger.create({
+  trigger: ".scene1",
+  start: "top top",
+  onEnter: () => document.querySelector(".scroll-button--top").style.display = "block",
+  onLeaveBack: () => document.querySelector(".scroll-button--top").style.display = "none"
+});
+
+
+
 /* SCENE 3 */
 //Borrowed this code from ChatGPT
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
