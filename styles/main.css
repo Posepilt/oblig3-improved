@@ -227,14 +227,15 @@ body {
   text-decoration: none;
 }
 
-.intro {
-  height: 100vh;
-  background: linear-gradient(to bottom, #0077b6, #caf0f8);
+.intro__container {
+  block-size: 100vh;
+  inline-size: 100%;
+  background: linear-gradient(to bottom, #0077b6, beige);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
 }
 .intro__title {
   font-size: clamp(2.4rem, 2.1329rem + 1.2211vw, 3.125rem);
@@ -242,38 +243,17 @@ body {
   color: #fff;
   margin-bottom: 1rem;
 }
-.intro__subtitle {
+.intro__text {
   font-size: clamp(1.6667rem, 1.5439rem + 0.5614vw, 2rem);
   color: #f0f8ff;
   text-align: center;
   width: min(95%, 60ch);
   margin-inline: auto;
 }
-
-.story {
-  background: linear-gradient(to bottom, #caf0f8, beige);
-  min-height: 100vh;
-  background-color: #0c4576;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem;
-  opacity: 1;
-  transform: translateY(0); /* <-- changed */
-  z-index: 1000;
-}
-.story__content {
-  max-width: 600px;
-  text-align: center;
-}
-.story__info {
+.intro__info {
   font-size: clamp(2rem, 1.8158rem + 0.8421vw, 2.5rem);
   margin-top: 2rem;
   color: #0077b6;
-}
-.story__text {
-  font-size: clamp(1.3889rem, 1.3111rem + 0.3556vw, 1.6rem);
-  line-height: 1.6;
 }
 
 /* SCENE 1 */
