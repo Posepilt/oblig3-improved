@@ -327,5 +327,3 @@ const observer = new IntersectionObserver((entries) => {
 }, {
   threshold: 0.3
 });
-
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
