@@ -7,19 +7,15 @@
 .scene1 {
     height: 100%;
     width: 100%;
-}
-.scene1__text {
-    width: 17ch;
-}
-.scene1__svg {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    bottom: 0;
-}
-
-.wave {
-    animation: wave 2s ease-in-out infinite;
+    &__text {
+        width: 17ch;
+    }
+    &__svg {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 #scene1__wave1 {

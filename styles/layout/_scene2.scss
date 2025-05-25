@@ -15,30 +15,30 @@
     position: absolute;
     bottom: 0;
 }
-#scene2__net, #scene2__cup, #scene2__litter1, #scene2__litter2, #scene2__plasticbag2, #scene2__bottle1, #scene2__bottle2, #scene2__plasticbag1, .float {
+.float {
     animation: float 3s infinite ease-in-out;
 }
 #scene2__net {
-    animation-delay: 0s;
+    animation-delay: 0.3s;
 }
 #scene2__cup {
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
 }
 #scene2__litter1 {
-    animation-delay: 1s;
+    animation-delay: 0.9s;
 }
 #cene2__litter2 {
-    animation-delay: 1.5s;
+    animation-delay: 1.2s;
 }
 #scene2__plasticbag1 {
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 #scene2__bottle1 {
-    animation-delay: 2.5s;
+    animation-delay: 1.8s;
 }
 #scene2__bottle2 {
-    animation-delay: 3s;
+    animation-delay: 2.1s;
 }
 #scene2__plasticbag2 {
-    animation-delay: 3.5s;
+    animation-delay: 2.4s;
 }
