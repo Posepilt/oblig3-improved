@@ -12,3 +12,9 @@
 .blur {
   filter: blur(4px);
 }
+.text-center {
+  text-align: center;
+}
+.stack > * + * {
+  margin-block-start: v.$space-2xs; 
+}
