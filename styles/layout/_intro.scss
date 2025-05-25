@@ -2,35 +2,30 @@
 
 // Intro section
 .intro {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #0077b6, beige);
   &__container {
-    block-size: 100vh;
-    inline-size: 100%;
-    background: linear-gradient(to bottom, #0077b6, beige);
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
   }
-    
-    
-    &__title {
-      font-size: v.$step-1;
-      font-weight: 500;
-      color: #fff;
-      margin-bottom: 1rem;
-    }
-  
-    &__text {
-      font-size: v.$step--1;
-      color: #f0f8ff;
-      text-align: center;
-      width: min(95%, 60ch);
-      margin-inline: auto;
-    }
-    &__info {
-      font-size: v.$step-0;
-      margin-top: 2rem;
-      color: #0077b6;
-    }
+  &__title {
+    font-size: v.$step-0;
+    font-weight: 500;
+    color: #fff;
   }
+  &__text {
+    font-size: v.$step--2;
+    color: #fff;
+    max-width: 50ch;
+    margin-inline: auto;
+  }
+  &__info {
+    font-size: v.$step--3;
+    font-weight: 400;
+    color: #0077b6;
+  }
+}

@@ -1,14 +1,68 @@
 /* VARIABLES */
 
-//https://utopia.fyi/type/calculator
-$step--2: clamp(1.3889rem, 1.3111rem + 0.3556vw, 1.6rem);
-$step--1: clamp(1.6667rem, 1.5439rem + 0.5614vw, 2rem);
-$step-0: clamp(2rem, 1.8158rem + 0.8421vw, 2.5rem);
-$step-1: clamp(2.4rem, 2.1329rem + 1.2211vw, 3.125rem);
-$step-2: clamp(2.88rem, 2.5019rem + 1.7284vw, 3.9063rem);
+/* @link https://utopia.fyi/type/calculator?c=300,34,1.2,1920,64,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-//https://utopia.fyi/space/calculator/
-$space-3xs: clamp(0.5rem, 0.4539rem + 0.2105vw, 0.625rem);
-$space-2xs: clamp(1rem, 0.9079rem + 0.4211vw, 1.25rem);
-$space-xs: clamp(1.5rem, 1.3618rem + 0.6316vw, 1.875rem);
-$space-s: clamp(2rem, 1.8158rem + 0.8421vw, 2.5rem);
+  /* Step -5: 13.6638px → 20.9715px */
+  $step--5: clamp(0.854rem, 0.7694rem + 0.4511vw, 1.3107rem);
+  /* Step -4: 16.3966px → 26.2144px */
+  $step--4: clamp(1.0248rem, 0.9112rem + 0.606vw, 1.6384rem);
+  /* Step -3: 19.6759px → 32.768px */
+  $step--3: clamp(1.2297rem, 1.0782rem + 0.8082vw, 2.048rem);
+  /* Step -2: 23.6111px → 40.96px */
+  $step--2: clamp(1.4757rem, 1.2749rem + 1.0709vw, 2.56rem);
+  /* Step -1: 28.3333px → 51.2px */
+  $step--1: clamp(1.7708rem, 1.5062rem + 1.4115vw, 3.2rem);
+  /* Step 0: 34px → 64px */
+  $step-0: clamp(2.125rem, 1.7778rem + 1.8519vw, 4rem);
+  /* Step 1: 40.8px → 80px */
+  $step-1: clamp(2.55rem, 2.0963rem + 2.4198vw, 5rem);
+  /* Step 2: 48.96px → 100px */
+  $step-2: clamp(3.06rem, 2.4693rem + 3.1506vw, 6.25rem);
+  /* Step 3: 58.752px → 125px */
+  $step-3: clamp(3.672rem, 2.9052rem + 4.0894vw, 7.8125rem);
+  /* Step 4: 70.5024px → 156.25px */
+  $step-4: clamp(4.4064rem, 3.414rem + 5.2931vw, 9.7656rem);
+  /* Step 5: 84.6029px → 195.3125px */
+  $step-5: clamp(5.2877rem, 4.0063rem + 6.8339vw, 12.207rem);
+
+/* @link https://utopia.fyi/space/calculator?c=300,34,1.2,1920,64,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* Space 3xs: 9px → 16px */
+$space-3xs: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
+/* Space 2xs: 17px → 32px */
+$space-2xs: clamp(1.0625rem, 0.8889rem + 0.9259vw, 2rem);
+/* Space xs: 26px → 48px */
+$space-xs: clamp(1.625rem, 1.3704rem + 1.358vw, 3rem);
+/* Space s: 34px → 64px */
+$space-s: clamp(2.125rem, 1.7778rem + 1.8519vw, 4rem);
+/* Space m: 51px → 96px */
+$space-m: clamp(3.1875rem, 2.6667rem + 2.7778vw, 6rem);
+/* Space l: 68px → 128px */
+$space-l: clamp(4.25rem, 3.5556rem + 3.7037vw, 8rem);
+/* Space xl: 102px → 192px */
+$space-xl: clamp(6.375rem, 5.3333rem + 5.5556vw, 12rem);
+/* Space 2xl: 136px → 256px */
+$space-2xl: clamp(8.5rem, 7.1111rem + 7.4074vw, 16rem);
+/* Space 3xl: 204px → 384px */
+$space-3xl: clamp(12.75rem, 10.6667rem + 11.1111vw, 24rem);
+
+/* One-up pairs */
+/* Space 3xs-2xs: 9px → 32px */
+$space-3xs-2xs: clamp(0.5625rem, 0.2963rem + 1.4198vw, 2rem);
+/* Space 2xs-xs: 17px → 48px */
+$space-2xs-xs: clamp(1.0625rem, 0.7037rem + 1.9136vw, 3rem);
+/* Space xs-s: 26px → 64px */
+$space-xs-s: clamp(1.625rem, 1.1852rem + 2.3457vw, 4rem);
+/* Space s-m: 34px → 96px */
+$space-s-m: clamp(2.125rem, 1.4074rem + 3.8272vw, 6rem);
+/* Space m-l: 51px → 128px */
+$space-m-l: clamp(3.1875rem, 2.2963rem + 4.7531vw, 8rem);
+/* Space l-xl: 68px → 192px */
+$space-l-xl: clamp(4.25rem, 2.8148rem + 7.6543vw, 12rem);
+/* Space xl-2xl: 102px → 256px */
+$space-xl-2xl: clamp(6.375rem, 4.5926rem + 9.5062vw, 16rem);
+/* Space 2xl-3xl: 136px → 384px */
+$space-2xl-3xl: clamp(8.5rem, 5.6296rem + 15.3086vw, 24rem);
+
+/* Custom pairs */
+/* Space s-l: 34px → 128px */
+$space-s-l: clamp(2.125rem, 1.037rem + 5.8025vw, 8rem);

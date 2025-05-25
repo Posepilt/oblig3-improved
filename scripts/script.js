@@ -13,7 +13,7 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.querySelectorAll('animateTransform').forEach(anim => anim.remove());
 }
 
-/* SCENE4 (not timeline related) */
+/* SCENE 4 (not timeline related) */
 // Animating the brows of our characters scene4
 const brows = [
   document.querySelector("#_4-guy-brows"),
