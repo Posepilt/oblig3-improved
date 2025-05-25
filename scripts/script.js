@@ -1,12 +1,5 @@
 gsap.registerPlugin(ScrollTrigger); //tell GSAP we want to use scrollTrigger plugin
 
-/* SCENE2 (not timeline related) */
-gsap.from(".scene1__text", { //target, animate from -> to its original position
-  y: "-100vh",  //start above viewport
-  duration: 3,  //adjusts duration
-  ease: "power2.out",  //fast -> slow smooth stop
-});
-
 /* SCENE 3 */
 //Borrowed this code from ChatGPT
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -128,7 +121,7 @@ tl.to(".scene1__text", { //add animation to the timeline (tl), start from the cu
   scale: 0, //shrink the text to nothing
   duration: 0.5, //define scroll distance of animation
   ease: "back.in(2)", //predefined easing type (how an animation accelerates or decelerates) from the GSAP library, number indicates how much it zooms
-}, 0); //tells GSAP to start animation at the time 0 in the timeline (immediately)
+}, 0.5); //tells GSAP to start animation at the time 0 in the timeline (immediately)
 
 
 tl.to(["#scene1__guy", "#scene1__gal"], { //elements being animated
