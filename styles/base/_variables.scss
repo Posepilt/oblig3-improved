@@ -26,6 +26,10 @@
   $step-5: clamp(5.2877rem, 4.0063rem + 6.8339vw, 12.207rem);
 
 /* @link https://utopia.fyi/space/calculator?c=300,34,1.2,1920,64,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* Space 5xs: 2px → 4px */
+$space-5xs: clamp(0.125rem, 0.1019rem + 0.1235vw, 0.25rem);
+/* Space 4xs: 4px → 8px */
+$space-4xs: clamp(0.25rem, 0.2037rem + 0.2469vw, 0.5rem);
 /* Space 3xs: 9px → 16px */
 $space-3xs: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
 /* Space 2xs: 17px → 32px */

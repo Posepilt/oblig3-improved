@@ -10,13 +10,17 @@
         position: absolute;
         bottom: 0;
     }
-
     &__text {
         width: 15ch;
     }
-
     &__sub-text {
         font-size: 1rem;
+    }
+    &__bottle--1 {
+        animation-delay: 0.3s;
+    }
+    &__bottle--2 {
+        animation-delay: 0.6s;
     }
 }
 .svg-container {

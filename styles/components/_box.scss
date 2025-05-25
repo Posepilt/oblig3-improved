@@ -25,26 +25,3 @@
     background-color: rgba(255, 255, 255, 0.95);
     transform: translate(-50%, -50%);
 }
-
-#scrollToTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: #ff9900;
-    color: white;
-    font-size: 24px;
-    padding: 10px 15px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none; /* Hide as standard */
-    z-index: 999;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s ease;
-
-    &:hover {
-        background: #e67e00;
-    }
-  }
-  
-  
-  

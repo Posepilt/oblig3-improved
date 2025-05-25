@@ -104,6 +104,8 @@ a {
 /* Step 4: 70.5024px → 156.25px */
 /* Step 5: 84.6029px → 195.3125px */
 /* @link https://utopia.fyi/space/calculator?c=300,34,1.2,1920,64,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* Space 5xs: 2px → 4px */
+/* Space 4xs: 4px → 8px */
 /* Space 3xs: 9px → 16px */
 /* Space 2xs: 17px → 32px */
 /* Space xs: 26px → 48px */
@@ -149,25 +151,6 @@ a {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.95);
   transform: translate(-50%, -50%);
-}
-
-#scrollToTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: #ff9900;
-  color: white;
-  font-size: 24px;
-  padding: 10px 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none; /* Hide as standard */
-  z-index: 999;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease;
-}
-#scrollToTop:hover {
-  background: #e67e00;
 }
 
 /* Ending */
@@ -265,6 +248,31 @@ a {
   text-decoration: none;
 }
 
+.scroll-button {
+  position: fixed;
+  z-index: 100;
+  padding-inline: clamp(0.25rem, 0.2037rem + 0.2469vw, 0.5rem);
+  border-radius: clamp(0.25rem, 0.2037rem + 0.2469vw, 0.5rem);
+  font-size: clamp(1.2297rem, 1.0782rem + 0.8082vw, 2.048rem);
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  cursor: pointer;
+}
+.scroll-button:hover {
+  outline: 1px solid white;
+}
+
+.scroll-button--top {
+  top: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
+  right: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
+}
+
+.scroll-button--bottom {
+  bottom: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
+  right: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
+}
+
 .intro {
   height: 100vh;
   width: 100%;
@@ -273,6 +281,7 @@ a {
 .intro__container {
   height: 100%;
   width: 100%;
+  padding: clamp(1.0625rem, 0.8889rem + 0.9259vw, 2rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -467,6 +476,12 @@ a {
 }
 .scene4__sub-text {
   font-size: 1rem;
+}
+.scene4__bottle--1 {
+  animation-delay: 0.3s;
+}
+.scene4__bottle--2 {
+  animation-delay: 0.6s;
 }
 
 .svg-container {

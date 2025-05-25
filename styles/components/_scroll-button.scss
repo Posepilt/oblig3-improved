@@ -1,0 +1,45 @@
+@use "../base/variables" as v;
+.scroll-button {
+    position: fixed;
+    z-index: 100;
+    padding-inline: v.$space-4xs;
+    border-radius: v.$space-4xs;
+    font-size: v.$step--3;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        outline: 1px solid white;
+    }
+}
+.scroll-button--top {
+  top: v.$space-3xs;
+  right: v.$space-3xs;
+}
+.scroll-button--bottom {
+  bottom: v.$space-3xs;
+  right: v.$space-3xs;
+}
+
+
+
+// #scrollToTop {
+//     position: fixed;
+//     bottom: 30px;
+//     right: 30px;
+//     background: #ff9900;
+//     color: white;
+//     font-size: 24px;
+//     padding: 10px 15px;
+//     border-radius: 50%;
+//     cursor: pointer;
+//     display: none; /* Hide as standard */
+//     z-index: 999;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//     transition: opacity 0.3s ease;
+
+//     &:hover {
+//         background: #e67e00;
+//     }
+//   }

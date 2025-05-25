@@ -34,7 +34,7 @@ gal.addEventListener('mouseenter', () => {
 });
 
 // Making the rubbish disappear when clicked
-document.querySelectorAll("#_4-bottle-wave-2, #_4-cup-wave, #_4-plastic-bag, #_4-bottle-wave-1").forEach(item => {
+document.querySelectorAll("#_4-bottle-wave-2, #_4-cup-wave, #_4-bottle-wave-1").forEach(item => {
   item.addEventListener('click', function() {
     item.style.transition = 'opacity 0.5s ease-out';  // Gradient
     item.style.opacity = 0;  // Starts the fade effect
@@ -329,21 +329,3 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-// Show arrow when user has scrolled
-window.addEventListener('scroll', () => {
-  const scrollBtn = document.getElementById('scrollToTop');
-  if (window.scrollY > 300) {
-    scrollBtn.style.display = 'block';
-  } else {
-    scrollBtn.style.display = 'none';
-  }
-});
-
-// Scroll to top when you click on the arrow
-document.getElementById('scrollToTop').addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
