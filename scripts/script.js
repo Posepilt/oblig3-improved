@@ -29,9 +29,9 @@ window.addEventListener("scroll", () => {
 });
 
 /* INTRO SECTION */
-//stop animation of clouds if reduced motion is enabled
+//stop animations if reduced motion is enabled
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  //cloud 1
+  //cloud 1 animation
   gsap.fromTo(".intro__cloud--1",
     { x: "-45vw" }, //from off screen
     {
@@ -42,7 +42,7 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     }
   );
 
-  //cloud 2
+  //cloud 2 animation
   gsap.fromTo(".intro__cloud--2",
     { x: "-85vw" }, //from off screen
     {
@@ -53,6 +53,15 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       ease: "none"
     }
   );
+
+  //text animation
+  gsap.from(".intro__title, .intro__text, .intro__info", {
+    y: 50,
+    opacity: 0,
+    duration: 2,
+    stagger: 0.2, //delays each element a bit slightly so they animate one after the other
+    ease: "power2.out"
+  });
 }
 
 /* SCENE 3 */
@@ -62,7 +71,7 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 }
 
 /* SCENE 4 */
-// Animating the brows of our characters scene4
+//animating the brows of our characters scene4
 const brows = [
   document.querySelector("#_4-guy-brows"),
   document.querySelector("#_4-gal-brows")
