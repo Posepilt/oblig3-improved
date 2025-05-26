@@ -24,7 +24,8 @@
         font-weight: 500;
     }
     &__img {
-        width: min(100%, 300px);
+        min-width: 100px;
+        max-width: 300px;
     }
     &__span {
         display: block;

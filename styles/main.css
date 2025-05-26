@@ -137,6 +137,7 @@ a {
 /* Space 2xl-3xl: 136px → 384px */
 /* Custom pairs */
 /* Space s-l: 34px → 128px */
+/* Space xs-3xl: 26px → 384px */
 /* BOX COMPONENTS */
 .text-box {
   position: absolute;
@@ -217,7 +218,8 @@ a {
   font-weight: 500;
 }
 .ending__img {
-  width: min(100%, 300px);
+  min-width: 100px;
+  max-width: 300px;
 }
 .ending__span {
   display: block;
