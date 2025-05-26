@@ -8,6 +8,14 @@
     color: white;
     padding: v.$space-3xs;
     font-weight: 600;
+    &-2 {
+      font-weight: 500;
+      color: #0077b6;
+    }
+    &-3 {
+      font-weight: 500;
+      color: red;
+    }
 }
 .blur {
   filter: blur(4px);

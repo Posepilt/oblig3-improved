@@ -1,3 +1,4 @@
+@use "../base/variables" as v;
 /* SCENE 4 */
 .scene4 {
     height: 100vh;
@@ -41,8 +42,9 @@
     inset-block-start: 20%; 
     inset-inline-start: 50%; 
     transform: translateX(-50%); 
-    font-size: 2rem; 
+    font-size: v.$step-0; 
     color: green;
+    font-weight: 500;
 
     &.spin {
     animation: spinOnce 1s ease-out forwards;

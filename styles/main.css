@@ -497,8 +497,9 @@ a {
   inset-block-start: 20%;
   inset-inline-start: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: clamp(2.125rem, 1.7778rem + 1.8519vw, 4rem);
   color: green;
+  font-weight: 500;
 }
 #congrats.spin {
   animation: spinOnce 1s ease-out forwards;
@@ -539,6 +540,14 @@ a {
   color: white;
   padding: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
   font-weight: 600;
+}
+.highlight-2 {
+  font-weight: 500;
+  color: #0077b6;
+}
+.highlight-3 {
+  font-weight: 500;
+  color: red;
 }
 
 .blur {
