@@ -103,38 +103,14 @@ a {
 
 /* VARIABLES */
 /* @link https://utopia.fyi/type/calculator?c=300,34,1.2,1920,64,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* Step -5: 13.6638px → 20.9715px */
 /* Step -4: 16.3966px → 26.2144px */
 /* Step -3: 19.6759px → 32.768px */
 /* Step -2: 23.6111px → 40.96px */
-/* Step -1: 28.3333px → 51.2px */
 /* Step 0: 34px → 64px */
-/* Step 1: 40.8px → 80px */
-/* Step 2: 48.96px → 100px */
-/* Step 3: 58.752px → 125px */
-/* Step 4: 70.5024px → 156.25px */
-/* Step 5: 84.6029px → 195.3125px */
 /* @link https://utopia.fyi/space/calculator?c=300,34,1.2,1920,64,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* Space 5xs: 2px → 4px */
 /* Space 4xs: 4px → 8px */
 /* Space 3xs: 9px → 16px */
 /* Space 2xs: 17px → 32px */
-/* Space xs: 26px → 48px */
-/* Space s: 34px → 64px */
-/* Space m: 51px → 96px */
-/* Space l: 68px → 128px */
-/* Space xl: 102px → 192px */
-/* Space 2xl: 136px → 256px */
-/* Space 3xl: 204px → 384px */
-/* One-up pairs */
-/* Space 3xs-2xs: 9px → 32px */
-/* Space 2xs-xs: 17px → 48px */
-/* Space xs-s: 26px → 64px */
-/* Space s-m: 34px → 96px */
-/* Space m-l: 51px → 128px */
-/* Space l-xl: 68px → 192px */
-/* Space xl-2xl: 102px → 256px */
-/* Space 2xl-3xl: 136px → 384px */
 /* BOX COMPONENTS */
 .text-box {
   position: absolute;
