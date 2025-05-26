@@ -26,3 +26,6 @@ For a better experience on mobile, we recommend turning the screen horizontally.
 - GSAP for more fancy animations through JS, and using scrollTrigger, timelines, and IntersectionObserver to make the scrollytelling effects.
 - SVG animations using animateTransform. 
 - Github pages for deploying the page.
+
+## Source for facts in the story
+https://sustainabledevelopment.un.org/content/documents/Ocean_Factsheet_Pollution.pdf
