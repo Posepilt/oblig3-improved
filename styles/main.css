@@ -274,12 +274,15 @@ a {
 }
 
 .intro {
+  overflow-x: hidden;
   height: 100vh;
   width: 100%;
   background: linear-gradient(to bottom, #0077b6, beige);
   color: white;
 }
 .intro__container {
+  position: relative;
+  z-index: 1;
   height: 100%;
   width: 100%;
   padding: clamp(1.0625rem, 0.8889rem + 0.9259vw, 2rem);
@@ -300,6 +303,18 @@ a {
   font-size: clamp(1.2297rem, 1.0782rem + 0.8082vw, 2.048rem);
   font-weight: 400;
   color: #0077b6;
+}
+.intro__cloud--1 {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 20vw;
+}
+.intro__cloud--2 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 25vw;
 }
 
 /* SCENE 1 */
