@@ -506,4 +506,8 @@ a {
 
 .shadow {
   box-shadow: 0 0 clamp(0.25rem, 0.2037rem + 0.2469vw, 0.5rem) rgba(0, 0, 0, 0.5);
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
