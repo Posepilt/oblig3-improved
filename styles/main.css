@@ -1,5 +1,7 @@
 @charset "UTF-8";
+/* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+/* ANIMATIONS */
 .wave {
   animation: wave 2s ease-in-out infinite;
 }
@@ -84,6 +86,7 @@ a {
   color: inherit;
 }
 
+/* RESET */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -134,6 +137,7 @@ a {
 /* Space 2xl-3xl: 136px → 384px */
 /* Custom pairs */
 /* Space s-l: 34px → 128px */
+/* BOX COMPONENTS */
 .text-box {
   position: absolute;
   top: 50%;
@@ -161,7 +165,34 @@ a {
   transform: translate(-50%, -50%);
 }
 
-/* Ending */
+/* SCROLL BUTTONS */
+.scroll-button {
+  position: fixed;
+  z-index: 100;
+  padding-inline: clamp(0.25rem, 0.2037rem + 0.2469vw, 0.5rem);
+  border-radius: clamp(0.25rem, 0.2037rem + 0.2469vw, 0.5rem);
+  font-size: clamp(1.2297rem, 1.0782rem + 0.8082vw, 2.048rem);
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  cursor: pointer;
+}
+.scroll-button:hover {
+  outline: 1px solid white;
+}
+
+.scroll-button--top {
+  display: none;
+  top: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
+  right: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
+}
+
+.scroll-button--bottom {
+  bottom: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
+  right: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
+}
+
+/* ENDING / FINAL WORDS */
 .ending {
   height: 100vh;
   width: 100%;
@@ -192,32 +223,7 @@ a {
   display: block;
 }
 
-.scroll-button {
-  position: fixed;
-  z-index: 100;
-  padding-inline: clamp(0.25rem, 0.2037rem + 0.2469vw, 0.5rem);
-  border-radius: clamp(0.25rem, 0.2037rem + 0.2469vw, 0.5rem);
-  font-size: clamp(1.2297rem, 1.0782rem + 0.8082vw, 2.048rem);
-  color: white;
-  background: rgba(0, 0, 0, 0.7);
-  text-decoration: none;
-  cursor: pointer;
-}
-.scroll-button:hover {
-  outline: 1px solid white;
-}
-
-.scroll-button--top {
-  display: none;
-  top: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
-  right: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
-}
-
-.scroll-button--bottom {
-  bottom: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
-  right: clamp(0.5625rem, 0.4815rem + 0.4321vw, 1rem);
-}
-
+/* INTRO SECTION */
 .intro {
   position: relative;
   overflow-x: hidden;
@@ -472,6 +478,7 @@ a {
     animation: none !important;
   }
 }
+/* UTILITY CLASSES */
 .hidden {
   opacity: 0;
 }

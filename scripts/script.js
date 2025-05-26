@@ -29,6 +29,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* INTRO SECTION */
+//stop animation of clouds if reduced motion is enabled
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   //cloud 1
   gsap.fromTo(".intro__cloud--1",
