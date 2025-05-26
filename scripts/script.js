@@ -1,6 +1,11 @@
 gsap.registerPlugin(ScrollTrigger); //tell GSAP we want to use scrollTrigger plugin
 
+/* ===========================================
+   NOT TIMELINE RELATED
+=========================================== */
+
 /* SCROLL BUTTON APPEAR/DISSAPPEAR */
+//top
 ScrollTrigger.create({
   trigger: ".scene1",
   start: "top top",
@@ -8,8 +13,8 @@ ScrollTrigger.create({
   onLeaveBack: () => document.querySelector(".scroll-button--top").style.display = "none"
 });
 
-//gets scroll to bottom button
-const bottomBtn = document.querySelector(".scroll-button--bottom");
+//bottom
+const bottomBtn = document.querySelector(".scroll-button--bottom"); //gets scroll to bottom button
 
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
@@ -23,50 +28,44 @@ window.addEventListener("scroll", () => {
   }
 });
 
-/* INTRO */
-// Cloud 1: from fully left offscreen -> across screen -> fully right offscreen
+/* INTRO SECTION */
+//cloud 1
 gsap.fromTo(".intro__cloud--1",
-  { x: "-20vw" }, // 100% screen + 20% cloud width
+  { x: "-20vw" }, //from off screen
   {
-    x: "100vw",
+    x: "100vw", //to off screen oppiste side
     duration: 22,
     repeat: -1,
     ease: "none"
   }
 );
 
-// Cloud 2: from fully right offscreen -> across screen -> fully left offscreen
+//cloud 2
 gsap.fromTo(".intro__cloud--2",
-  { x: "-25vw" }, // 100% screen + 25% cloud width
+  { x: "-25vw" }, //from off screen
   {
-    x: "100vw",
+    x: "100vw", //to off screen opposite side
     duration: 26,
-    delay: 2,
+    delay: 2, //animation start delay
     repeat: -1,
     ease: "none"
   }
 );
 
-
-
-
-
-
-
 /* SCENE 3 */
-//Borrowed this code from ChatGPT
+//borrowed this code from ChatGPT, looks for if user has asked for reduced motion, used to stop SMIL animations
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.querySelectorAll('animateTransform').forEach(anim => anim.remove());
 }
 
-/* SCENE 4 (not timeline related) */
+/* SCENE 4 */
 // Animating the brows of our characters scene4
 const brows = [
   document.querySelector("#_4-guy-brows"),
   document.querySelector("#_4-gal-brows")
 ];
 
-// GSAP animation running once when hovered over
+//GSAP animation running once when hovered over
 const browsAnim = gsap.to(brows, {
   y: -5,
   duration: 0.5,
@@ -86,7 +85,7 @@ gal.addEventListener('mouseenter', () => {
   browsAnim.restart(); 
 });
 
-// Making the rubbish disappear when clicked
+//making the rubbish disappear when clicked
 document.querySelectorAll("#_4-bottle-wave-2, #_4-cup-wave, #_4-bottle-wave-1").forEach(item => {
   item.addEventListener('click', function() {
     item.style.transition = 'opacity 0.5s ease-out';  // Gradient
@@ -95,35 +94,34 @@ document.querySelectorAll("#_4-bottle-wave-2, #_4-cup-wave, #_4-bottle-wave-1").
   });
 });
 
-// Showing sparkles when rubbish is clicked away
+//showing sparkles when rubbish is clicked away
 function showSparkle(trashId, sparkleId) {
   const trash = document.getElementById(trashId);
   const sparkle = document.getElementById(sparkleId);
 
   if (!trash || !sparkle) return;
 
-  // Finding middle of trash group in SVG coordinates
+  //finding middle of trash group in SVG coordinates
   const bbox = trash.getBBox();
   const centerX = bbox.x + bbox.width / 2;
   const centerY = bbox.y + bbox.height / 2;
 
-  // Width and height of sparkles from SVG attributes
+  //width and height of sparkles from SVG attributes
   const sparkleWidth = +sparkle.getAttribute("width");
   const sparkleHeight = +sparkle.getAttribute("height");
 
-  // Center the sparkles over trash
+  //center the sparkles over trash
   sparkle.setAttribute("x", centerX - sparkleWidth / 2);
   sparkle.setAttribute("y", centerY - sparkleHeight / 2);
   sparkle.setAttribute("visibility", "visible");
 
-  // Hide again after 800ms
+  //hide again after 800ms
   setTimeout(() => {
     sparkle.setAttribute("visibility", "hidden");
   }, 800);
 }
 
-
-// Popup message after all rubbish is removed
+//popup message after all rubbish is removed
 const trashItems = document.querySelectorAll('.rubbish');
 const totalTrash = trashItems.length;
 let trashRemoved = 0;
@@ -147,7 +145,7 @@ trashItems.forEach(item => {
   });
 });
 
-/* Borrowed instructions on .scene4__text to dissappear from ChatGPT */
+//borrowed this code for .scene4__text to dissappear from ChatGPT
 let textRemoved = false;
 
 document.querySelectorAll(".rubbish").forEach(item => {
@@ -159,7 +157,11 @@ document.querySelectorAll(".rubbish").forEach(item => {
   });
 });
 
-/* Timeline scene 1-2 */
+/* ===========================================
+   THE REST OF THE SCRIPT IS TIMELINE RELATED
+=========================================== */
+
+/* TIMELINE SCENE 1-2 */
 let tl = gsap.timeline({ //create timeline (tl)
   scrollTrigger: {  //connect timeline to scroll
     trigger: ".stage", //the element starting the chain reaction of animations
@@ -367,16 +369,3 @@ let tl4 = gsap.timeline({
      scrub: true,
    }
  });
-
-// The final words
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    //} else {
-    //  entry.target.classList.remove("show");
-    }
-  });
-}, {
-  threshold: 0.3
-});
