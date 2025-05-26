@@ -37,10 +37,11 @@ gsap.fromTo(".intro__cloud--1",
 
 // Cloud 2: from fully right offscreen -> across screen -> fully left offscreen
 gsap.fromTo(".intro__cloud--2",
-  { x: "-50vw" }, // 100% screen + 25% cloud width
+  { x: "-25vw" }, // 100% screen + 25% cloud width
   {
     x: "100vw",
     duration: 26,
+    delay: 2,
     repeat: -1,
     ease: "none"
   }
