@@ -26,3 +26,6 @@
 .stack > * + * {
   margin-block-start: v.$space-2xs; 
 }
+.shadow {
+  box-shadow: 0 0 v.$space-4xs rgba(0, 0, 0, 0.5);
+}
