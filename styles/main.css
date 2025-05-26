@@ -217,10 +217,6 @@ a {
   font-size: clamp(2.125rem, 1.7778rem + 1.8519vw, 4rem);
   font-weight: 500;
 }
-.ending__img {
-  min-width: 100px;
-  max-width: 300px;
-}
 .ending__span {
   display: block;
 }
