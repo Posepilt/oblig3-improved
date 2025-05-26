@@ -29,28 +29,30 @@ window.addEventListener("scroll", () => {
 });
 
 /* INTRO SECTION */
-//cloud 1
-gsap.fromTo(".intro__cloud--1",
-  { x: "-20vw" }, //from off screen
-  {
-    x: "100vw", //to off screen oppiste side
-    duration: 22,
-    repeat: -1,
-    ease: "none"
-  }
-);
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  //cloud 1
+  gsap.fromTo(".intro__cloud--1",
+    { x: "-45vw" }, //from off screen
+    {
+      x: "75vw", //to off screen oppiste side
+      duration: 22,
+      repeat: -1,
+      ease: "none"
+    }
+  );
 
-//cloud 2
-gsap.fromTo(".intro__cloud--2",
-  { x: "-25vw" }, //from off screen
-  {
-    x: "100vw", //to off screen opposite side
-    duration: 26,
-    delay: 2, //animation start delay
-    repeat: -1,
-    ease: "none"
-  }
-);
+  //cloud 2
+  gsap.fromTo(".intro__cloud--2",
+    { x: "-85vw" }, //from off screen
+    {
+      x: "40vw", //to off screen opposite side
+      duration: 26,
+      delay: 2, //animation start delay
+      repeat: -1,
+      ease: "none"
+    }
+  );
+}
 
 /* SCENE 3 */
 //borrowed this code from ChatGPT, looks for if user has asked for reduced motion, used to stop SMIL animations
