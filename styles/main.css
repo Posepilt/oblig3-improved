@@ -135,9 +135,6 @@ a {
 /* Space l-xl: 68px → 192px */
 /* Space xl-2xl: 102px → 256px */
 /* Space 2xl-3xl: 136px → 384px */
-/* Custom pairs */
-/* Space s-l: 34px → 128px */
-/* Space xs-3xl: 26px → 384px */
 /* BOX COMPONENTS */
 .text-box {
   position: absolute;
@@ -316,11 +313,9 @@ a {
   top: 0;
   left: 0;
 }
-
 .scene2__text {
   width: 18ch;
 }
-
 .scene2__svg {
   width: 100%;
   height: auto;
@@ -435,7 +430,7 @@ a {
   width: 15ch;
 }
 .scene4__sub-text {
-  font-size: 1rem;
+  font-size: clamp(1.0248rem, 0.9112rem + 0.606vw, 1.6384rem);
 }
 .scene4__bottle--1 {
   animation-delay: 0.3s;

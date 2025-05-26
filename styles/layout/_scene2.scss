@@ -1,20 +1,21 @@
 /* SCENE 2 */
 .scene2 {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.scene2__text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &__text {
     width: 18ch;
-}
-.scene2__svg {
+  }
+  &__svg {
     width: 100%;
     height: auto;
     position: absolute;
     bottom: 0;
+  }
 }
+
 #scene2__net {
     animation-delay: 0.3s;
 }

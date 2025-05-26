@@ -4,7 +4,6 @@
     height: 100vh;
     width: 100%;
     position: relative;
-
     &__svg {
         width: 100%;
         height: auto;
@@ -15,7 +14,7 @@
         width: 15ch;
     }
     &__sub-text {
-        font-size: 1rem;
+        font-size: v.$step--4;
     }
     &__bottle--1 {
         animation-delay: 0.3s;
@@ -30,7 +29,6 @@
 }
 #gal_garbage-bag {
     transform-origin: center top;
-
     &:hover {
         animation: swing 0.6s ease-in-out 1;
       }
@@ -45,7 +43,6 @@
     font-size: v.$step-0; 
     color: green;
     font-weight: 500;
-
     &.spin {
     animation: spinOnce 1s ease-out forwards;
   }

@@ -67,8 +67,3 @@ $space-xl-2xl: clamp(6.375rem, 4.5926rem + 9.5062vw, 16rem);
 /* Space 2xl-3xl: 136px → 384px */
 $space-2xl-3xl: clamp(8.5rem, 5.6296rem + 15.3086vw, 24rem);
 
-/* Custom pairs */
-/* Space s-l: 34px → 128px */
-$space-s-l: clamp(2.125rem, 1.037rem + 5.8025vw, 8rem);
-/* Space xs-3xl: 26px → 384px */
-$space-xs-3xl: clamp(1.625rem, -2.5185rem + 22.0988vw, 24rem);
