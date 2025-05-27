@@ -338,6 +338,33 @@ a {
   height: 100vh;
   transition: background 0.5s ease;
 }
+.scene3__bubbles {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 5%;
+}
+.scene3__bubbles2 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 33%;
+}
+.scene3__bubbles3 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 66%;
+}
+.scene3__bubbles4 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 99%;
+}
 
 #scene3__depth1 {
   background: linear-gradient(to bottom, #98e9f4, #005577);
@@ -349,11 +376,6 @@ a {
 
 #scene3__depth3 {
   background: linear-gradient(to bottom, #003344, #000a13);
-}
-
-#depth__bubble {
-  width: 100%;
-  height: auto;
 }
 
 #depth3__turtle {
