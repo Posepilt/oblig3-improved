@@ -87,19 +87,19 @@ const browsAnim = gsap.to(brows, {
   paused: true
 });
 
-const guy = document.querySelector("#_4-guy"); 
+const guy = document.querySelector("#_4-guy");
 guy.addEventListener('mouseenter', () => {
-  browsAnim.restart(); 
+  browsAnim.restart();
 });
 
-const gal = document.querySelector("#_4-gal"); 
+const gal = document.querySelector("#_4-gal");
 gal.addEventListener('mouseenter', () => {
-  browsAnim.restart(); 
+  browsAnim.restart();
 });
 
 //making the rubbish disappear when clicked
 document.querySelectorAll("#_4-bottle-wave-2, #_4-cup-wave, #_4-bottle-wave-1").forEach(item => {
-  item.addEventListener('click', function() {
+  item.addEventListener('click', function () {
     item.style.transition = 'opacity 0.5s ease-out';  // Gradient
     item.style.opacity = 0;  // Starts the fade effect
     setTimeout(() => item.style.display = 'none', 500);  // Removes elements after fade effect
@@ -198,21 +198,21 @@ tl.to(["#scene1__guy", "#scene1__gal"], { //elements being animated
 }, 1.2); //time in timeline to start animation
 
 tl.to([
-  "#scene1__water", 
-  "#scene1__sand", 
-  "#scene1__wave1", 
-  "#scene1__wave2", 
-  "#scene1__wave3", 
-  "#scene1__wave4", 
-  "#scene1__wave5", 
-  "#scene1__stone", 
-  "#scene1__tree", 
+  "#scene1__water",
+  "#scene1__sand",
+  "#scene1__wave1",
+  "#scene1__wave2",
+  "#scene1__wave3",
+  "#scene1__wave4",
+  "#scene1__wave5",
+  "#scene1__stone",
+  "#scene1__tree",
   "#scene1__bush"], { //elements being targeted
-    opacity: 1, //fade in the targeted elements making them visible
-    duration: 1, //scroll duration
+  opacity: 1, //fade in the targeted elements making them visible
+  duration: 1, //scroll duration
 }, 1.2); //start time of the animation in the timeline
 
-tl.to("#scene1__sand", { 
+tl.to("#scene1__sand", {
   y: "44%", //move down 44% of its own height, making it look like a wave
   duration: 0.8,
   repeat: 1, //repeats the animation
@@ -272,10 +272,10 @@ tl.to({}, { //no target, just a pause when combined with "duration: 2"
 
 /* Timeline scene 3 depth 1-2 */
 let tl2 = gsap.timeline({
-  scrollTrigger: {  
+  scrollTrigger: {
     trigger: "#scene3__depth1",
-    start: "top top", 
-    end: "+=3000", 
+    start: "top top",
+    end: "+=3000",
     pin: true,
     scrub: true,
   }
@@ -289,10 +289,10 @@ tl2.to(".scene3__bubbles, .scene3__bubbles2, .scene3__bubbles3, .scene3__bubbles
 
 /* Timeline scene 3 depth 3 */
 let tl3 = gsap.timeline({
-  scrollTrigger: {  
+  scrollTrigger: {
     trigger: "#scene3__depth3",
-    start: "top top", 
-    end: "+=8000", 
+    start: "top top",
+    end: "+=8000",
     pin: true,
     scrub: true,
   }
@@ -366,18 +366,18 @@ tl3.to("#scene3__depth3", {
 }, 12.4);
 
 tl3.to("#scene3__depth3", {
- opacity: 0,
- duration: 1,
+  opacity: 0,
+  duration: 1,
 }, 15);
 
 /* SCENE4 */
 /* Timeline scene 4 */
 let tl4 = gsap.timeline({
-   scrollTrigger: {  
-     trigger: ".scene4",
-     start: "top top", 
-     end: "+=1000", 
-     pin: true,
-     scrub: true,
-   }
- });
+  scrollTrigger: {
+    trigger: ".scene4",
+    start: "top top",
+    end: "+=1000",
+    pin: true,
+    scrub: true,
+  }
+});
