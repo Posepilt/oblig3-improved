@@ -275,14 +275,14 @@ let tl2 = gsap.timeline({
   scrollTrigger: {  
     trigger: "#scene3__depth1",
     start: "top top", 
-    end: "+=2000", 
+    end: "+=3000", 
     pin: true,
     scrub: true,
   }
 });
 
-tl2.to("#depth__bubble", {
-  y: "-100vh",    // move up far out of screen
+tl2.to(".scene3__bubbles, .scene3__bubbles2, .scene3__bubbles3, .scene3__bubbles4", {
+  y: "-150vh",    // move up far out of screen
   duration: 2,    // speed
   ease: "power1.inOut", // fast → slow → fast
 }, 0);            // start immediately at time 0
